@@ -25,6 +25,13 @@ const Navbar = () => {
             >
                 New Author
             </NavLink>
+            <NavLink
+                to={"/donate"}
+                className="btn btn-success m-2 text-white"
+                end
+            >
+                Donate
+            </NavLink>
         </div>
     );
 };

@@ -6,6 +6,8 @@ import Blogs from "./views/Blogs";
 import CreateAuthor from "./views/CreateAuthor";
 import BlogDetails from "./views/BlogDetails";
 import Edit from "./views/Edit";
+import Donate from "./views/Donate";
+import Thanks from "./views/Thanks";
 
 const App = () => {
     return (
@@ -32,6 +34,14 @@ const App = () => {
                     <Route
                         path="/createauthor"
                         element={<CreateAuthor />}
+                    />
+                    <Route
+                        path="/donate"
+                        element={<Donate />}
+                    />
+                    <Route
+                        path="/thankyou"
+                        element={<Thanks />}
                     />
                 </Routes>
             </main>
