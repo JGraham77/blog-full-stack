@@ -8,6 +8,7 @@ import BlogDetails from "./views/BlogDetails";
 import Edit from "./views/Edit";
 import Donate from "./views/Donate";
 import Thanks from "./views/Thanks";
+import Contact from "./views/Contact";
 
 const App = () => {
     return (
@@ -42,6 +43,10 @@ const App = () => {
                     <Route
                         path="/thankyou"
                         element={<Thanks />}
+                    />
+                    <Route
+                        path="/contact"
+                        element={<Contact />}
                     />
                 </Routes>
             </main>

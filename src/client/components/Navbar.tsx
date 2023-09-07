@@ -32,6 +32,13 @@ const Navbar = () => {
             >
                 Donate
             </NavLink>
+            <NavLink
+                to={"/contact"}
+                className="btn btn-success m-2 text-white"
+                end
+            >
+                Contact Me
+            </NavLink>
         </div>
     );
 };

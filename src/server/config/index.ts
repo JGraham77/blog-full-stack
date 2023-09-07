@@ -12,3 +12,9 @@ export const sqlconfig = {
 export const stripeconfig = {
     apiKey: process.env.STRIPE_API_KEY as string,
 };
+
+export const mailgunconfig = {
+    apiKey: process.env.MAILGUN_KEY as string,
+    domain: process.env.MAILGUN_DOMAIN as string,
+    toEmail: process.env.MAILGUN_TO_EMAIL as string,
+};
