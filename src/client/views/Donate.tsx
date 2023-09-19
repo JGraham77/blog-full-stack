@@ -19,13 +19,14 @@ const Donate = () => {
     const handlePaymentIntent = async (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
         try {
-            const results = await fetch("/api/donate/payment-intent", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ amount: Number(donation.amount) }),
-            });
+            // const results = await fetch("/api/donate/payment-intent", {
+            //     method: "POST",
+            //     headers: {
+            //         "Content-Type": "application/json",
+            //     },
+            //     body: JSON.stringify({ amount: Number(donation.amount) }),
+            // });
+            const results = await POST("api/donate/payment-intent", { amount: Number(donation.amount) });
             const { clientSecret } = await results.json();
 
             setDonation((pre) => ({ ...pre, clientSecret, show: false }));

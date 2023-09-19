@@ -1,6 +1,6 @@
 import * as express from "express";
 import Stripe from "stripe";
-import { stripeconfig } from "../config";
+import { stripeconfig } from "../../config";
 
 const stripe = new Stripe(stripeconfig.apiKey, {
     apiVersion: "2023-08-16",

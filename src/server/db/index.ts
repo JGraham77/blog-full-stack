@@ -1,5 +1,5 @@
-import * as mysql from 'mysql2';
-import { sqlconfig } from '../config';
+import * as mysql from "mysql2";
+import { sqlconfig } from "../config";
 
 const pool = mysql.createPool(sqlconfig);
 
@@ -9,7 +9,7 @@ export const Query = <T = mysql.ResultSetHeader>(sql: string, values: unknown[] 
             if (err) {
                 reject(err);
             } else {
-                resolve(data as unknown as T);
+                resolve(data as T);
             }
         });
     });

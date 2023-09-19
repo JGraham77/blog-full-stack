@@ -18,3 +18,8 @@ export const mailgunconfig = {
     domain: process.env.MAILGUN_DOMAIN as string,
     toEmail: process.env.MAILGUN_TO_EMAIL as string,
 };
+
+export const jwtconfig = {
+    secret: process.env.JWT_SECRET as string,
+    expires: process.env.JWT_EXPIRES,
+};

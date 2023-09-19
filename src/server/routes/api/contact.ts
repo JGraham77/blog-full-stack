@@ -1,7 +1,7 @@
 import * as express from "express";
 import Mailgun from "mailgun.js";
 
-import { mailgunconfig } from "../config";
+import { mailgunconfig } from "../../config";
 
 // The way in the walkthrough wouldn't work for me, had to do this for it to actually work
 // import FormData from "form-data"
