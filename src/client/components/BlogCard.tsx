@@ -30,7 +30,6 @@ const BlogCard = ({ blog, isDetails }: { blog: BlogsWithContext; isDetails?: boo
                         <p>{isDetails ? blog.content : `${blog.content.substring(0, 100)}`}</p>
                     )}
                     <hr className="border border-primary border-1 opacity-75" />
-                    {/* @ts-ignore */}
                     <p>Blog created at: {blog.created_at}</p>
                     {!isDetails && (
                         <Link
